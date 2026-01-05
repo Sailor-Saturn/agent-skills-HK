@@ -1,16 +1,25 @@
 ---
 name: corebluetooth
-description: Apple Core Bluetooth framework for BLE and Bluetooth Classic. Use for scanning, connecting, advertising, service and characteristic discovery, read/write, notifications, L2CAP, background or state restoration, and error handling in iOS, macOS, tvOS, watchOS, or visionOS apps.
+description: Apple Core Bluetooth framework for BLE and Bluetooth Classic. Use for central/peripheral workflows, scanning, connecting, advertising, GATT services/characteristics, read/write/notify, L2CAP, background processing or state restoration, and error handling across Apple platforms.
 ---
 
 # Core Bluetooth
+
+## What to open
+
+- Use `corebluetooth/AboutCoreBluetooth.md` and `corebluetooth/CoreBluetoothOverview.md` for concepts and role orientation.
+- Use `corebluetooth/PerformingCommonCentralRoleTasks.md` for step-by-step central workflows.
+- Use `corebluetooth/PerformingCommonPeripheralRoleTasks.md` for step-by-step peripheral workflows.
+- Use `corebluetooth/BestPracticesforInteractingwithaRemotePeripheralDevice.md` and `corebluetooth/BestPracticesforSettingUpYourLocalDeviceasaPeripheral.md` for pitfalls and best practices.
+- Use `corebluetooth/CoreBluetoothBackgroundProcessingforiOSApps.md` for background modes and lifecycle constraints.
+- Use `corebluetooth/corebluetooth.md` for API quick maps and symbol lookup.
 
 ## Workflow
 
 - Identify whether the app acts as a central, a peripheral, or both.
 - Wait for the manager state to be `poweredOn` before issuing BLE operations.
 - Follow the role checklist to keep discovery and connection order correct.
-- Open `corebluetooth/corebluetooth.md` for API reference; search within it instead of reading the whole file.
+- Open the role task guide and best practices first; use the API reference for exact signatures.
 
 ## Central checklist
 
